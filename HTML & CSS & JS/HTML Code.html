@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My First Heading</h1>
+    <p>My First Paragraph</p>
+    <img 
+       src="data:image/png;base64,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"/>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<html>
+    <head>
+        <title>Main page</title>
+    </head>
+    <body>
+        <h1>LOGIN</h1>
+        ID <input type = "text" name="id" placeholder="아이디를 입력해주세요."><br/>
+        PASSWORD <input type = "password" name="password" placeholder="비밀번호를 입력해주세요.">
+        <p>
+            <input value="LOGIN" type="submit" name="login">
+        </p>
+    </body>
+</html>
+---------------------------------------------------------------------------------------------------------
+<div class="login-container">
+    <form>
+      <h2>Login</h2>
+      <div class="input-box">
+        <input type="text" placeholder="Username">
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password">
+      </div>
+      <button class="btn">Login</button>
+    </form>
+  </div>
+  ----------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+		body {
+			background-color: #F5F5F5;
+			font-family: Arial, sans-serif;
+		}
+		
+		h2 {
+			text-align: center;
+			margin-top: 50px;
+			color: #333333;
+		}
+		
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 30px;
+			background-color: #FFFFFF;
+			border-radius: 5px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		input[type="text"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 3px;
+			border: 1px solid #CCCCCC;
+			font-size: 16px;
+		}
+		
+		input[type="submit"] {
+			background-color: #333333;
+			color: #FFFFFF;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #666666;
+		}
+		
+		.error {
+			color: #FF0000;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Login</h2>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Log In">
+		<div class="error">Error message goes here.</div>
+	</form>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<h2>Login</h2>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Log In">
+		<div class="error">Error message goes here.</div>
+	</form>
+</body>
+</html>
+-------------------------------
+<style>
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333333;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #666666;
+}
+
+.error {
+    color: #FF0000;
+    margin-top: 10px;
+}
+</style>
+-----------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>Who the Fuck are you?</title>
+<meta charset="utf-8">
+</head>
+<body>
+<ol>
+    <li>UZI's life</li>
+    <li>Uzi's friends</li>
+    <li>Uzi's family</li>
+    <li>안녕, 씨발아?</li>
+    <h1>UZI's life.</h1>
+</ol>
+<br>His name is <u><strong>Woo Jihoon.</strong></u>
+
+<br><br><strong>His message.</strong>
+<br>I want to create simple chat app with python, HTML and CSS. I made code with python, HTML and CSS. But it didn't work. I want to know what problem is. Plz help me. Thank you.
+
+<img src="data:image/jpeg;base64,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" width="500">
+
+<table>
+    <tr>
+        <td>head</td>
+        <td>98.1%</td>
+    </tr>
+    <tr>
+        <td>body</td>
+        <td>97.9%</td>
+    </tr>
+    <tr>
+        <td>html</td>
+        <td>97.9%</td>
+    </tr>
+</table>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selahs Recipe</title>
+</head>
+<body>
+    <p><u><h1>SELAHS RECIPE</h1></u></p>
+    <h3>원두A</h3>_Classic, 고소한 맛<br>
+    <h3>원두B</h3>_Semi Classic, 산미있는 상큼한 맛<br>
+    <u><strong><h2>SIGNATURE</h2></strong></u>
+    <h4>셀라그라피 라떼(HOT)</h4>- 사과절임 60g + 스팀우유 160g + 15g(B) + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍, 우유 뜨겁게</strong></u><br>
+    <h4>셀라그라피 라떼(ICED)</h4>- 사과절임 60g + 우유 160g + 얼음 2개 + 15g(B) + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍</strong></u><br>
+    <h4>셀라그라피 티 라떼(HOT)</h4>- 사과절임 60g + 스팀우유 160g + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍, 우유 뜨겁게</strong></u><br>
+    <h4>셀라그라피 티 라떼(ICED)</h4>- 사과절임 60g + 우유 160g + 얼음 2개 + 우유거품 + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍</strong></u><br>
+    <u><strong><h2>ESPRESSO</h2></strong></u>
+    <h4>에스프레소</h4>- 잔에 뜨거운 정수물로 데우기 -> 2shot<br>
+    <h4>아메리카노(HOT)</h4>- 정수물 230g + 2shot<br>
+    <h4>아메리카노(ICED)</h4>- 정수물 160g + 얼음 가득 + 2shot<br>
+    <h4>카페라떼(HOT)</h4>- 2shot + 스팀밀크<br>
+    <h4>카페라떼(ICED)</h4>- 우유 170g + 얼음 가득 + 2shot<br>
+    <h4>카푸치노(HOT)</h4>- 2shot + 스팀밀크 + 시나몬 파우더<br>
+    <h4>카푸치노(ICED)</h4>- 2shot + 우유 170g<br>
+    <h4>바닐라라떼(HOT)</h4>- 2shot + 바닐라시럽 25g + 스팀밀크<br>
+    <h4>바닐라라떼(ICED)</h4>- 바닐라시럽 25g + 우유 170g + 저어주기 + 얼음 + 2shot<br>
+    <h4>카라멜마끼아또(HOT)</h4>- 제조 카라멜소스 30g + 2shot + 스팀밀크 + 카라멜소스 드리즐<br>
+    <h4>카라멜마끼아또(ICED)</h4>- 제조 카라멜소스 30g + 우유 170g + 저어주기 + 얼음 잔 80% + 2shot + 우유거품 + 카라멜소스 드리즐<br>
+    <h4>돌체라떼(HOT)</h4>- 2shot + 연유 30g + 스팀밀크<br>
+    <h4>돌체라떼(ICED)</h4>- 연유 30g + 우유 170g + 저어주기 + 얼음 + 2shot<br>
+    <h4>아인슈페너(HOT)</h4>- 뜨거운 물 130g + 라떼샷 2 + 휘핑 50g + 토핑 5g + 초코파우더<br>
+    <h4>아인슈페너(ICED)</h4>- 물 80g + 얼음 5개 + 라떼샷 2 + 휘핑 50g + 토핑 5g + 초코파우더<br>
+    <u><strong><h2>NON-COFFEE</h2></strong></u>
+    <h4>말차라떼(HOT)</h4>- 말차 25g + 연유 30g + 스팀밀크<br>
+    <h4>말차라떼(ICED)</h4>- 우유 170g + 말차 25g + 연유 30g<br>
+    <h4>초코라떼(HOT)</h4>- 초코소스 50g + 스팀밀크<br>
+    <h4>초코라떼(ICED)</h4>- 우유 170g + 초코소스 50g<br>
+    <u><strong><h2>TEA/VINCHAUD</h2></strong></u>
+    <h4>자몽티(HOT)</h4>- 자몽청 110g + 정수물 -> 스팀 -> 자몽슬라이스<br>
+    <h4>자몽티(ICED)</h4>- 자몽청 110g + 정수물 -> 얼음 8~9개 -> 로즈마리 + 자몽슬라이스<br>
+    <h4>레몬티(HOT)</h4>- 레몬청 65g + 정수물 -> 스팀 -> 레몬슬라이스<br>
+    <h4>레몬티(ICED)</h4>- 레몬청 90g + 정수물 -> 얼음 8~9개 -> 로즈마리 + 레몬슬라이스<br>
+    <h4>뱅쇼(HOT)</h4>- 뱅쇼 250g 스팀 -> 시나몬 스틱 + 3개 건조과일슬라이스<br>
+    <h4>뱅쇼(ICED)</h4>- 뱅쇼 250g + 얼음 -> 시나몬 스틱 + 3개 건조과일슬라이스<br>
+    <u><strong><h2>ADE</h2></strong></u>
+    <h4>자몽에이드</h4>- 자몽청 130g + 얼음 8~9개 + 탄산수 + 로즈마리 + 자몽슬라이스<br>
+    <h4>레몬에이드</h4>- 레몬청 90g + 얼음 8~9개 + 탄산수 + 로즈마리 + 레몬슬라이스<br>
+    <h4>딸기에이드</h4>- 딸기청 80g + 탄산수 1캔 + 썬딸기 30g<br>
+    <u><strong><h2>JUICE</h2></strong></u>
+    <h4>케일청포도주스</h4>- 청포도 200g + 케일 2장 + 얼음 4~5개 + 물 55g + 설탕시럽 5g 넣고 갈기 -> 잔에 얼음 2개<br>
+    <h4>파인코코넛주스</h4>- 파인애플 200g + 얼음 7개 + 코코넛밀크 ??g + 설탕시럽 15g 넣고 갈기 -> 잔에 얼음 4개<br>
+    <h4>밀크티(HOT)</h4>- 원액 130g + 스팀우유 100g<br>
+    <h4>밀크티(ICED)</h4>- 원액 130g + 우유 120g<br>
+    <h4>딸기우유</h4>- 딸기청 80g + 우유 200g + 썬딸기 30g<br>
+    <h4>적포도주스</h4>- 적포도 200g + 물 30g + 설탕시럽 5g + 얼음 7개 + 잔에 얼음 2개<br>
+    <h4>블루베리요거트스무디</h4>- 블루베리 110g + 요거트 75g + 우유 30g + 설탕시럽 25g + 얼음 10개<br>
+    
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selahs Recipe</title>
+</head>
+<body>
+    <p><u><h1>SELAHS RECIPE</h1></u></p>
+    <h3>원두A</h3>_Classic, 고소한 맛<br>
+    <h3>원두B</h3>_Semi Classic, 산미있는 상큼한 맛<br>
+    <u><strong><h2>SIGNATURE</h2></strong></u>
+    <h4>셀라그라피 라떼(HOT)</h4>- 사과절임 60g + 스팀우유 160g + 15g(B) + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍, 우유 뜨겁게</strong></u><br>
+    <h4>셀라그라피 라떼(ICED)</h4>- 사과절임 60g + 우유 160g + 얼음 2개 + 15g(B) + 우유거품 + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍</strong></u><br>
+    <h4>셀라그라피 티 라떼(HOT)</h4>- 사과절임 60g + 스팀우유 160g + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍, 우유 뜨겁게</strong></u><br>
+    <h4>셀라그라피 티 라떼(ICED)</h4>- 사과절임 60g + 우유 160g + 얼음 2개 + 우유거품 + 건조사과조각 + 시나몬 스틱 <u><strong>_시나몬 파우더 리밍</strong></u><br>
+    <u><strong><h2>ESPRESSO</h2></strong></u>
+    <h4>에스프레소</h4>- 잔에 뜨거운 정수물로 데우기 -> 2shot<br>
+    <h4>아메리카노C(HOT)</h4>- Classic: 정수물 230g + 2shot<br>- Semi Classic: 정수물 220g + 2shot<br>
+    <h4>아메리카노C(ICED)</h4>- Classic: 정수물 160g + 얼음 가득 + 2shot<br>- Semi Classic: 정수물 150g + 얼음 가득 + 2shot<br>
+    <h4>카페라떼(HOT)</h4>- 2shot + 스팀밀크<br>
+    <h4>카페라떼(ICED)</h4>- 우유 170g + 얼음 가득 + 2shot<br>
+    <h4>카푸치노(HOT)</h4>- 2shot + 스팀밀크 + 시나몬 파우더<br>
+    <h4>카푸치노(ICED)</h4>- 2shot + 우유 170g + 시나몬 파우더<br>
+    <h4>바닐라라떼(HOT)</h4>- 2shot + 바닐라시럽 25g + 스팀밀크<br>
+    <h4>바닐라라떼(ICED)</h4>- 바닐라시럽 25g + 우유 170g + 저어주기 + 얼음 + 2shot<br>
+    <h4>카라멜마끼아또(HOT)</h4>- 제조 카라멜소스 30g + 2shot + 스팀밀크 + 카라멜소스 드리즐<br>
+    <h4>카라멜마끼아또(ICED)</h4>- 제조 카라멜소스 30g + 우유 170g + 저어주기 + 얼음 잔 80% + 2shot + 우유거품 + 카라멜소스 드리즐<br>
+    <h4>돌체라떼(HOT)</h4>- 2shot + 연유 30g + 스팀밀크<br>
+    <h4>돌체라떼(ICED)</h4>- 연유 30g + 우유 170g + 저어주기 + 얼음 + 2shot<br>
+    <h4>아인슈페너(HOT)</h4>- 뜨거운 물 130g + 라떼샷 2 + 휘핑 50g + 토핑 5g + 초코파우더<br>
+    <h4>아인슈페너(ICED)</h4>- 물 80g + 얼음 5개 + 라떼샷 2 + 휘핑 50g + 토핑 5g + 초코파우더<br>
+    <h4>디카페인 콜드브루</h4>- 콜드브루 원액 70g + 정수물 150g<br>
+    <h4>돌체브루라떼</h4>- 우유 150g + 연유 25g + 얼음 + 콜드브루 원액 80g<br>
+    <u><strong><h2>NON-COFFEE</h2></strong></u>
+    <h4>말차라떼(HOT)</h4>- 말차 25g + 연유 30g + 스팀밀크<br>
+    <h4>말차라떼(ICED)</h4>- 우유 170g + 말차 25g + 연유 30g<br>
+    <h4>초코라떼(HOT)</h4>- 초코소스 50g + 스팀밀크<br>
+    <h4>초코라떼(ICED)</h4>- 우유 170g + 초코소스 50g<br>
+    <h4>논알콜 하이볼</h4>- 진저 레몬 베이스 38g + 모히또 시럽 7g + 라임&애플민트 1개씩 + 각얼음 5개 + 라임 탄산수 170~175g + 머들러<br>
+    <h4>초코크림라떼</h4>- 우유 120g + 얼음 3개 + 작은계량컵: 우유 50g + 초코소스 40g + 휘핑 30g + 초코 3g + 딸기다이스 3개 + 슈가파우더<br>
+    <u><strong><h2>TEA/VINCHAUD</h2></strong></u>
+    <h4>자몽티(HOT)</h4>- 자몽청 110g + 정수물 170g -> 스팀 -> 자몽슬라이스<br>
+    <h4>자몽티(ICED)</h4>- 자몽청 160g + 정수물 150g -> 얼음 8~9개 -> 로즈마리 + 자몽슬라이스<br>
+    <h4>레몬티(HOT)</h4>- 레몬청 65g + 정수물 200g -> 스팀 -> 레몬슬라이스<br>
+    <h4>레몬티(ICED)</h4>- 레몬청 90g + 정수물 180g -> 얼음 8~9개 -> 로즈마리 + 레몬슬라이스<br>
+    <h4>밀크티(HOT)</h4>- 원액 130g + 스팀우유 100g<br>
+    <h4>밀크티(ICED)</h4>- 원액 130g + 우유 120g<br>
+    <h4>뱅쇼(HOT)</h4>- 뱅쇼 250g 스팀 -> 시나몬 스틱 + 3개 건조과일슬라이스<br>
+    <h4>뱅쇼(ICED)</h4>- 뱅쇼 250g + 얼음 -> 시나몬 스틱 + 3개 건조과일슬라이스<br>
+    <u><strong><h2>ADE</h2></strong></u>
+    <h4>자몽에이드</h4>- 자몽청 130g + 얼음 8~9개 + 탄산수 + 로즈마리 + 자몽슬라이스<br>
+    <h4>레몬에이드</h4>- 레몬청 90g + 얼음 8~9개 + 탄산수 + 로즈마리 + 레몬슬라이스<br>
+    <h4>딸기에이드</h4>- 딸기청 80g + 탄산수 1캔 + 썬딸기 30g<br>
+    <u><strong><h2>JUICE</h2></strong></u>
+    <h4>케일청포도주스</h4>- 청포도 200g + 케일 2장 + 얼음 4~5개 + 물 55g + 설탕시럽 5g 넣고 갈기 -> 잔에 얼음 2개<br>
+    <h4>파인코코넛주스</h4>- 파인애플 200g + 얼음 7개 + 코코넛밀크 50g + 설탕시럽 15g 넣고 갈기 -> 잔에 얼음 4개<br>
+    <h4>딸기우유</h4>- 딸기청 80g + 우유 200g + 썬딸기 30g<br>
+    <h4>적포도주스</h4>- 적포도 200g + 물 30g + 설탕시럽 5g + 얼음 7개 + 잔에 얼음 2개<br>
+    <h4>블루베리요거트스무디</h4>- 블루베리 110g + 요거트 75g + 우유 30g + 설탕시럽 25g + 얼음 10개<br>
+    <h4>플레인요커트스무디</h4>- 요거트 100g + 우유 75g + 그릭아침파우더 40g + 프레시요 파우더 20g + 성탕시럽 15g + 얼음 12개<br>
+    
+    
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

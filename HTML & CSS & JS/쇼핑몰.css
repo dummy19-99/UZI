@@ -1,0 +1,154 @@
+
+* {
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+aside {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+ul {
+    list-style: none;
+    padding: 0%;
+}
+
+ul > li {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li:hover {
+    cursor: pointer;
+    opacity: 0.1;
+}
+
+#notice {
+    padding-top: 45px;
+    font-size: larger;
+    text-align: center;
+}
+
+#page {
+    float: left;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*
+    grid-auto-rows: 150px;
+    */
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'a b c d'
+    'e f g h';
+}
+
+#p1 {
+    grid-area: a;
+}
+
+#p2 {
+    grid-area: b;
+}
+
+#p3 {
+    grid-area: c;
+}
+
+#p4 {
+    grid-area: d;
+}
+
+#p5 {
+    grid-area: e;
+}
+
+#p6 {
+    grid-area: f;
+}
+
+#p7 {
+    grid-area: g;
+}
+
+#p8 {
+    grid-area: h;
+}
+
+
+
+
+/*이미지 파일*/
+
+.product {
+    width: 242px;
+    height: 458px;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8 {
+    width: 242px;
+    height: 250px;
+}
+
+#img1 {
+    background: url(images/마크곤잘레스\ 와펜\ 가디건\(1\).jpg) no-repeat center;
+    background-size: contain;
+}
+
+#img2 {
+    background: url(images/LEVI\'S\ 501\(1\).jpg) no-repeat center;
+    background-size: contain;
+}
+
+#img3 {
+    background: url(images/mmlg\ hoodie\(1\).jpg) no-repeat center;
+    background-size: contain;
+
+}
+
+#img4 {
+    background: url(images/dickies\ 874\(1\).jpg) no-repeat center;
+    background-size: contain;
+}
+
+#img5 {
+    background: url(images/yeseyesee\ 가디건\(1\).jpg) no-repeat center;
+    background-size: contain;
+}
+
+#img6 {
+    background: url(images/MLB\ NY\ CAP\(1\).png) no-repeat center;
+    background-size: contain;
+}
+
+#img7 {
+    background: url(images/air\ jordan\ travis\ scott\(1\).jpg) no-repeat center;
+    background-size: contain;
+}
+
+#img8 {
+    background: url(images/인식표\(2\).png) no-repeat center;
+    background-size: contain;
+}
+
+.nametag {
+    text-align: center;
+}

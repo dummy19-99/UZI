@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우지훈</title>
+    <link rel="stylesheet" href="회원가입(1).css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1><a href="전병찬의 집.html">전병찬 house</a></h1>
+        </div>
+        <nav>
+          <ul id="topmenu">
+            <li><a href="회원가입(1).html">회원가입</a></li>
+            <li><a href="전병찬의 집 세부항목.html">전병찬 친구들</a></li>
+            <li><a href="#">전병찬 전담</a></li>
+            <li><a href="#">전병찬 브로마이드</a></li>
+          </ul>
+        </nav>
+    </header>
+    <form id="contents">
+        <fieldset class="gaein">
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="username">이름</label>
+                    <input id="username" name="username" type="text" required autofocus>
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input id="tel" name="tel" type="tel" required placeholder="010-XXXX-XXXX">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="geksil">
+            <legend>객실정보</legend>
+            <ul>
+                <li>
+                    <input id="basic" name="room" type="radio">
+                    <label for="basic">기본형(최대2인)</label>
+                </li>
+                <li>
+                    <input id="family" name="room" type="radio">
+                    <label for="family">가족형(최대4인)</label>
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">제출</button>
+    </form>
+    
+</body>
+</html>

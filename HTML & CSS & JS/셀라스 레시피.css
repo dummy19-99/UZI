@@ -1,0 +1,40 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+body {
+    background-color: beige;
+}
+
+h1, h2 {
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: khaki;
+    border: 0.5px solid gray;
+    text-align: center;
+}
+
+/*
+h4 {
+    background-color: brown;
+    
+}
+*/
+
+div {
+    margin-bottom: 80px;
+}
+
+/*
+div :not(h1, h2) {
+    margin-left: 30px;
+}
+
+#text {
+    margin-left: 30px;
+}
+*/
+

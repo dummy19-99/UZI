@@ -1,0 +1,330 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+}
+
+/******************** 헤더 영역 ******************/
+
+header {
+    width:100%;    /*  너비 */
+    height:80px;   /* 높이 */
+    font-size: x-large;
+    background-color: gray;
+    color: aliceblue;
+    text-align: center;
+    /*
+    padding-top: 25px;
+    */
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+/******************** 헤더 영역 ******************/
+
+/******************** BOX 1 ******************/
+
+#box1 {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*
+    grid-auto-rows: 150px;
+    */
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'a b c'
+    'a d c';
+}
+
+/* test check1 */
+
+#test_check1 {
+    grid-area: a;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); /* 수직정렬 */
+    text-align: center;
+    /*display: flex;
+    flex-direction: column;*/
+    align-items: center;
+}
+
+#plane_test {
+    padding: 5px 50px;
+    border: 0.5px solid black;
+    background-color: aquamarine;
+}
+
+#reply1 {
+    display: block;
+    border: 0.5px solid gray;
+    background-color: greenyellow;
+    height: 100px;
+}
+
+#minmax {
+    display: block;
+    background-color: blueviolet;
+}
+
+#gap {
+    background-color: aquamarine;
+    font-size: larger;
+}
+
+#max_gap {
+    background-color: blueviolet;
+}
+
+/* test check */
+
+/* standard */
+
+#standard {
+    grid-area: b;
+    /*
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    */
+    padding: 30px;
+}
+
+#number1, #number2, #number3, #number4 {
+    border: 1px solid black;
+}
+
+/* standard */
+
+/* value */
+
+#value {
+    grid-area: d;
+    display: flex;
+    /*
+    flex-direction: column;
+    */
+    padding: 20px;
+}
+
+.p_number {
+    font-size: larger;
+    color: indigo;
+    background-color: skyblue;
+}
+
+#variable1, #variable2, #variable3, #variable4, #variable5, #variable6 {
+    color: blue;
+    background-color: greenyellow;
+}
+
+/* value */
+
+/* result */
+
+#result {
+    grid-area: c;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); /* 수직정렬 */
+    text-align: center;
+    /*display: flex;
+    flex-direction: column;*/
+    align-items: center;
+}
+
+#weight {
+    padding: 5px 50px;
+    border: 0.5px solid black;
+    background-color: aquamarine;
+}
+
+#reply2 {
+    display: block;
+    border: 0.5px solid gray;
+    background-color: greenyellow;
+    height: 100px;
+}
+
+#reply3 {
+    display: block;
+    border: 0.5px solid gray;
+    color: red;
+    background-color: white;
+    height: 70px;
+}
+
+#limit {
+    display: block;
+    border: 0.5px solid gray;
+    background-color: blueviolet;
+}
+
+/* result */
+
+/******************** BOX 1 ******************/
+
+/******************** BOX 2 ******************/
+
+#box2 {
+    /*
+    display: block;
+    */
+    width: 100%;
+    height: 30%;
+    border-top: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;
+    float: right;
+}
+
+#test_check2 {
+    float: right;
+    width: 50%;
+    height: 70%;
+    padding: 25px;
+    background-color: bisque;
+    text-align: center;
+}
+
+#final_result {
+    font-size: large;
+}
+
+#datetime {
+    background-color: white;
+    font-size: larger;
+}
+
+#tong_ki {
+    width: 100%;
+    background-color: green;
+}
+
+#reply4 {
+    /*
+    align-items: center;
+    */
+    display: block;
+    width: 60%;
+    height: 40%;
+    border: 0.5px solid gray;
+    background-color: greenyellow;
+}
+
+/******************** BOX 2 ******************/
+
+/******************** aside ******************/
+
+aside {
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#supply {
+    margin-bottom: 200px;
+}
+
+#scanner {
+    display: inline;
+    float: right;
+    font-size: larger;
+    color: blue;
+    background-color: greenyellow;
+}
+
+meter, #progress {
+    width: 80%;
+    height: 20px;
+}
+
+.aside_block1, .aside_block2, #connecting {
+    border: 0.5px solid gray;
+    color: blue;
+    background-color: skyblue;
+}
+
+.block1, .block2 {
+    border: 0.5px solid gray;
+}
+
+/******************** aside ******************/
+
+/******************** footer ******************/
+
+footer {
+    width: 100%;
+    height: 15%;
+    border: 1px solid gray;
+    display: flex;
+}
+
+#footer_python {
+    color: white;
+    background-color: black;
+    height: 90%;
+    width: 7fr;
+    padding: 10px;
+}
+
+.gaein {
+    width: 1fr;
+    float: right
+}
+
+#button1 {
+    width: 1fr;
+}
+
+#button2 {
+    width: 1fr;
+}
+
+#button3 {
+    width: 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** footer ******************/
+
+
+
+/* 실험용 */
+
+/*
+#container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
+}
+*/

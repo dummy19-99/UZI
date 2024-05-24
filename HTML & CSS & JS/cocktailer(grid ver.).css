@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/********************* 헤더 영역 ********************/
+
+a {
+    text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width:100%;    /*  너비 */
+    height:100px;   /* 높이 */
+    background-color: gray;
+}
+
+#logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    line-height:100px;
+    padding-left: 20px;
+}
+
+#logo h1 {
+    font-family:'Merienda', cursive;
+    font-weight:700;
+    font-size:30px;
+    color: #fff;
+}
+
+nav {
+    float: right;
+    width: 900px;
+    height: 100px;
+    padding-top: 40px;
+}
+
+#topmenu {
+    height: 60px;
+}
+
+#topmenu > li {
+    float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
+    position: relative;  
+}
+
+#topmenu > li > a {
+    display:inline-block;  /* 링크 텍스트는 블록으로 */ 
+    font-size:20px;
+    color:white;  /* 글자 색 */
+    font-weight:600;  /* 글자 굵기 */
+    padding:20px 40px;  /* 패딩 */
+}
+
+/*
+#header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+*/
+
+/******************* 헤더 영역 ********************/
+
+/********** BOX1 **********/
+
+#container {
+    width: 400px;
+    height: 600px;
+    margin: 40px auto;
+    background-color: aliceblue;
+}
+
+.content {
+    width: 400px;
+    height: 300px;
+}
+
+#box1 {
+    background-color: darkolivegreen;
+}
+
+#cocktail {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    top: 60px;
+    left: 140px;
+    transform-style: preserve-3d;
+    transition: 1s;
+    perspective: 1100px;
+}
+
+#cocktail_img, #cocktail_behind {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#cocktail_img {
+    background: url(images/올드패션드.jpg) no-repeat center;
+    background-size: contain;
+}
+
+#cocktail_behind {
+    background-color: rgb(43, 44, 44);
+    transform: rotateX(180deg);
+    color: white;
+}
+
+#cocktail:hover {
+    transform: rotateX(180deg);
+}
+
+#word {
+    position: relative;
+    top: 110px;
+    text-align: center;
+}
+
+/********** BOX1 **********/
+
+/********** BOX2 **********/
+
+#box2 {
+    display: grid;
+    grid-template-areas: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#box2 {
+    padding: 10px;
+    background-color: brown;
+}
+
+#tag1, #tag2, #tag3, #tag4 {
+    color: white;
+    position: relative;
+    width: 80px;
+    height: 21px;
+    font-weight: bold;
+}
+
+#card1, #card2, #card3, #card4 {
+    background-color: rgb(43, 44, 44);
+    position: relative;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: 1s;
+    perspective: 1100px;
+    border-radius: 10px;
+}
+
+#card1_front, #card1_behind, #card2_front, #card2_behind, #card3_front, #card3_behind, #card4_front, #card4_behind {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#card1_front, #card2_front, #card3_front, #card4_front {
+    font-size: 14px;
+    color: white;
+}
+
+#card1_behind, #card2_behind, #card3_behind, #card4_behind {
+    background-color: rgb(43, 44, 44);
+    transform: rotateX(180deg);
+    color: white;
+}
+
+#card1:hover {
+    transform: rotateX(180deg);
+}
+
+#card2:hover {
+    transform: rotateX(180deg);
+}
+
+#card3:hover {
+    transform: rotateX(180deg);
+}
+
+#card4:hover {
+    transform: rotateX(180deg);
+}
+
+#card4 {
+    width: 220px;
+    height: 100px;
+}
+*/
+
+/*
+#card3, #card4 {
+    text-align: center;
+}
+*/
+
+/*
+#tag3, #tag4 {
+    text-align: center;
+}
+*/
+
+/********** BOX2 **********/
+
+
+/************ 미디어 쿼리 ***********/
+/*
+@media(min-width:800px) {
+    
+}
+*/
+
+/************ 미디어 쿼리 ***********/

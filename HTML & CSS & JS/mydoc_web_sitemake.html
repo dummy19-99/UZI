@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <logo id="logo"> <!--티오더 박을 로고 부분-->
+                <h1>t 오더</h1>
+            </logo>
+            <nav id="navi"> <!--선택한 식사종류를 나타내는 부분-->
+                <ul id="topMenu">
+
+                </ul>
+            </nav>
+        </header>
+        <div id="just">
+
+        </div>
+        <div id="Right_Aside">
+
+        </div>
+        <aside> <!--식사류 같은 거 박을 애들-->
+            <ul id="menu">
+                <li class="select" id="select1"><a href="#meal1">식사류</a></li>
+                <li class="select" id="select2"><a href="#cook1">요리류</a></li>
+                <li class="select" id="select3"><a href="#set_menu1">세트메뉴</a></li>
+                <li class="select" id="select4"><a href="#drink1">음료</a></li>
+                <li style="background-color: red;">직원 호출</li>
+            </ul>
+        </aside>
+        <div id="main">
+            <div class="sort" id="meal1">식사류</div>
+            <div class="food" id="meal"><!--식사류-->
+                <div class="food_detail">
+                    <img src="images/짜장면.jpg" alt="">
+                    <div class="detail">
+                        <p>짜짱면</p>
+                        <p>6,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/매운짜장면.jpg" alt="">
+                    <div class="detail">
+                        <p>매운짜장면</p>
+                        <p>7,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/짜장밥.jpg">
+                    <div class="detail">
+                        <p>짜장밥</p>
+                        <p>8,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/짬뽕.jpg" alt="">
+                    <div class="detail">
+                        <p>짬뽕</p>
+                        <p>8,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/짬뽕밥.jpg" alt="">
+                    <div class="detail">
+                        <p>짬뽕밥</p>
+                        <p>8,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/백짬뽕.jpg">
+                    <div class="detail">
+                        <p>백짬뽕</p>
+                        <p>8,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/차돌짬뽕.jpg">
+                    <div class="detail">
+                        <p>차돌짬뽕</p>
+                        <p>10,000원</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sort" id="cook1">요리류</div>
+            <div class="food" id="cook"><!--요리류-->
+                <div class="food_detail">
+                    <img src="images/탕수육.jpg" alt="">
+                    <div class="detail">
+                        <p>탕수육</p>
+                        <p>21,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/깐풍기.jpg" alt="">
+                    <div class="detail">
+                        <p>깐풍기</p>
+                        <p>23,000원</p>
+                    </div>
+                </div>
+                <div class="food_detail">
+                    <img src="images/칠리새우.jpg" alt="">
+                    <div class="detail">
+                        <p>칠리새우</p>
+                        <p>23,000원</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sort" id="set_menu1">세트메뉴</div>
+            <div class="food" id="set_menu"><!--세트메뉴-->
+                <div class="detail">
+                    <img src="images/1인세트.jpg">
+                    <p>1인 세트</p>
+                    <p>12,000원</p>
+                </div>
+                <div class="detail">
+                    <img src="images/2인세트.jpg">
+                    <p>2인 세트</p>
+                    <p>24,000원</p>
+                </div>
+            </div>
+            <div class="sort" id="drink1">음료</div>
+            <div class="food" id="drink"><!--음료-->
+                <div class="detail">
+                    <img src="images/콜라.jpg">
+                    <p>콜라</p>
+                    <p>3,000원</p>
+                </div>
+                <div class="detail">
+                    <img src="images/사이다.jpg">
+                    <p>사이다</p>
+                    <p>3,000원</p>
+                </div>
+                <div class="detail">
+                    <img src="images/환타.jpg">
+                    <p>환타</p>
+                    <p>3,000원</p>
+                </div>
+                <div class="detail">
+                    <img src="images/제로콜라.jpg">
+                    <p>제로콜라</p>
+                    <p>2,500원</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#" id="event">이벤트</a></li>
+                <li><a href="#">▶추가기능</a></li>
+                <li><a href="#" id="order_list">주문내역</a></li>
+                <li><a href="#" id="cal">계산하기</a></li>
+                <li><a href="#" id="bag">장바구니</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script/order.js"></script>
+</body>
+</html>

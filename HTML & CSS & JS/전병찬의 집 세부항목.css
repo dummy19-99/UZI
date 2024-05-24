@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+* {
+    margin:0;   /* 마진 리셋 */
+    padding:0;   /* 패딩 리셋 */
+    box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+    text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+
+ul {
+    list-style: none;
+}
+
+#container {
+    margin:0 auto;  /* 화면 중앙에 배치 */
+    width:1200px;    /* 너비 */    
+    background-color: #fff;
+}
+
+header {
+    width:100%;    /*  너비 */
+    height:100px;   /* 높이 */
+    background-color: #045;
+}
+
+#logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    line-height:100px;
+    padding-left: 20px;
+}
+
+#logo h1 {
+    font-family:'Merienda', cursive;
+    font-weight:700;
+    font-size:30px;
+    color: #fff;
+}
+
+nav {
+    float: right;
+    width: 900px;
+    height: 100px;
+    padding-top: 40px;
+}
+
+#topmenu {
+    height: 60px;
+}
+
+#topmenu > li {
+    float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
+    position: relative;  
+  }
+
+#topmenu > li > a {
+    display:inline-block;  /* 링크 텍스트는 블록으로 */ 
+    font-size:20px;
+    color:#fff;  /* 글자 색 */
+    font-weight:600;  /* 글자 굵기 */
+    padding:20px 40px;  /* 패딩 */
+}
+
+#topmenu > li > a:hover {
+    color:#1fa8f8;
+    text-shadow:0 -2px #222;
+}
+
+
+
+.guesthouse {
+ margin: 50px 100px;
+}
+
+main > section {
+    margin: 60px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+
+#JeonFriends > .UZI > b > p {
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+#JeonFriends > .UZI > p {
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+.UZI > img {
+    float:left; 
+    margin-right:50px;
+    border-radius:20px;
+}
+
+#LEE {
+    line-height: 2.0;
+}
+
+#factory img {
+    float: left;
+    margin-right: 50px;
+    border-radius: 20px;
+    width: 180px;
+}
+
+#LEE > .Leejejun > b > p {
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+#LEE > .Leejejun > p {
+    font-size: 18px;
+    /*padding-top: 20px;*/
+}
+
+/******************/
+/*   푸터 영역    */
+/******************/
+
+#bottomMenu ul {
+    float: left;
+    position: relative;
+}
+#bottomMenu ul li {
+  display: inline-block;
+  padding: 5px 20px;
+  border-right:1px solid #ddd;   /* 항목 오른쪽에 테두리 */ 
+}
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited {  
+    font-size:15px;  /* 글자 크기 */ 
+    color:#666;   /* 글자 색 */ 
+  } 

@@ -1,0 +1,499 @@
+Python Code
+
+-print
+
+-variable
+----------------------------------------------
+my_name = "uzi"
+age = 23
+print(my_name,age)
+dead = False
+print("Hello my name is",my_name,"and I'm",age,"years old")  
+------------------------------------------------
+-function()
+-> () = function을 실행한다
+-----------------------------------
+def say_hello():
+  print("hello how r u?")
+
+say_hello()
+say_hello()
+say_hello()
+say_hello()
+say_hello()
+------------------------------
+def say_hello(user_name):
+  print("hello",user_name,"how r u")
+
+say_hello("uzi")
+say_hello("chan")
+say_hello("won")
+-----------------------------------
+def say_hello(user_name="annonymous"):
+  print("Hello",user_name)
+
+say_hello("uzi")
+say_hello()
+-------------------------------------
+def say_hello(user_name,user_age):
+  print("hello",user_name,"how r u.","You are",user_age,"years old.")
+  
+say_hello("uzi",23)
+say_hello("chan",23)
+say_hello("won",23)
+--------------------------------------
+def tax_calculator(credit):
+  print(credit * 0.35)
+
+tax_calculator(1500000000)
+tax_calculator(950000000)
+----------------------------------
+def plus(a=0,b=0):
+  print(a+b)
+
+def minus(a=0,b=0):
+  print(a-b)
+
+def multiplication(a=0,b=0):
+  print(a*b)
+
+def division(a=0,b=1):
+  print(a/b)
+
+def power(a=0,b=1):
+  print(a**b)
+
+plus(89,25)
+minus(12,2)
+minus(8,16)
+multiplication(11,11)
+division(64,8)
+division(5,12)
+power(2,4)
+power(8,0)
+
+plus()
+minus()
+multiplication()
+division()
+power()
+------------------------------------
+def plus(a,b):
+  return a+b
+
+def minus(a,b):
+  return a-b
+
+def multiplication(a,b):
+  return a*b
+
+def division(a,b):
+  return a/b
+
+def power(a,b):
+  return a**b
+
+c = plus(8,9)
+d = minus(2,7)
+e = multiplication(11,11)
+f = division(9,3)
+g = power(2,3)
+
+print(e*g)
+------------------------------------
+def tax_calculator(credit):
+  return credit * 0.35
+
+def pay_tax(tax):
+  print("Thank you for paying",tax)
+
+to_pay = tax_calculator(1500000000)
+pay_tax(to_pay)
+----------------------------------------
+my_name = "uzi" 
+my_age = 23
+my_color_eyes = "black"
+
+print(f"Hello I'm {my_name}, I have {my_age} years in the earth, {my_color_eyes} is my eye color")
+--------------------------------------------------------------------------
+def make_juice(fruit):
+  return f"{fruit}+☆"
+
+def add_ice(juice):
+  return f"{juice}+□"
+
+def add_sugar(iced_juice):
+  return f"{iced_juice}+◇"
+
+juice = make_juice(◎)
+cold_juice = add_ice(juice)
+perfect_juice = add_sugar(cold_juice)
+
+print(perfect_juice)
+------------------------------------------------
+password_correct = True
+
+if password_correct:
+  print("Here is your money")
+else:
+  print("Wrong password")
+---------------------------------------------
+winner = 10
+
+if winner > 10:
+  print("Winner is greater than 10")
+elif winner < 10:
+  print("Winner is less than 10")
+else:
+  print("Winner is 10")
+-----------------------------------------------
+age = int(input("How old are you?"))
+
+if age < 18:
+  print("You can't drink.")
+elif age > 18 and age < 35:
+  print("You drink beer!")
+elif age == 60 or age == 70:
+  print("You're gonna dead...")
+else:
+  print("Go ahead!")
+-----------------------------------------------
+from random import randint
+
+user_choice = int(input("Choose number.:"))
+pc_choice = randint(1,50)
+
+if user_choice == pc_choice:
+  print("You won!")
+elif user_choice > pc_choice:
+  print("Lower! Computer chose", pc_choice)
+elif user_choice < pc_choice:
+  print("Higher! Computer chose", pc_choice)
+-------------------------------------
+distance = 0
+
+while distance <= 20:
+  print("I'm running:", distance, "km")
+  distance = distance + 1
+--------------------------------------
+from random import randint
+
+pc_choice = randint(1, 100)
+user_choice = int(input("Welcome to the OH casino!!\nChoose Number(1-100): "))
+
+while(user_choice != pc_choice):
+if user_choice > pc_choice:
+user_choice = int(input("Lower! One more chance: "))
+else:
+user_choice = int(input("Higher! One more chance: "))
+
+print(f"Bingo!! answer is {pc_choice}")
+-----------------------------------------------
+from random import randint
+
+print("Welcom to Casino!")
+pc_choice = randint(1,50)
+
+playing = True
+
+while playing:
+  user_choice = int(input("Choose number.:"))
+  if user_choice == pc_choice:
+    print("You won!")
+    playing = False
+  elif user_choice > pc_choice:
+    print("Lower!")
+  elif user_choice < pc_choice:
+    print("Higher!")
+----------------------------------------
+player = {
+  "name": "uzi",
+  "age": 23,
+  "alive": True,
+  "fav_food": ("pizza", "rice"),
+  "friend": {
+    "name": "lynn",
+    "fav_food": "apple"
+  }
+}
+
+print(player["friend"]["fav_food"])
+--------------------------------------
+player = {
+  "name": "uzi",
+  "age": 23,
+  "alive": True,
+  "fav_food": ("pizza", "rice"),
+  "friend": {
+    "name": "lynn",
+    "fav_food": "apple"
+  }
+}
+player['fav_food']="apple"
+player.pop("alive")
+
+
+print(player)
+---------------------------------------
+1) Lists
+- how to write : [ ]
+- properties: mutable, multi-type data
+- methods: append # Add elements in the latter part
+
+2) Tuple
+- how to write: ()
+- properties: not mutable, multi-type data
+- methods: restricted
+
+3) Dictionary
+- how to write: {key: value}
+- properties: mutable, multi-type data
+-----------------------------------------
+websites = (
+  "google.com",
+  "airbnb.com",
+  "twitter.com"
+  "facebook.com"
+)
+
+for each in websites:
+  print("Hello")
+-------------------------------
+websites = (
+  "google.com",
+  "airbnb.com",
+  "twitter.com",
+  "facebook.com",
+  "instagram.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  print(website)
+---------------------------------
+from requests import get
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "twitter.com",
+  "facebook.com",
+  "instagram.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  response = get(website)
+  print(response.status_code)
+---------------------------------
+from requests import get
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "twitter.com",
+  "facebook.com",
+  "instagram.com"
+)
+
+results = {}
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  response = get(website)
+  if response.status_code == 200:
+    results[website] = "OK"
+  else:
+    results[website] = "FAILED"
+
+print(results)
+---------------------------------------
+from requests import get
+
+websites = [
+"google.com",
+"instagram.com",
+"httpstat.us/502",
+"httpstat.us/404",
+"httpstat.us/300",
+"httpstat.us/200",
+"httpstat.us/101"
+]
+
+results = {}
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+    code = get(website).status_code
+    if code >= 500:
+      results[website] = "5xx/server error."
+    elif code >= 400:
+      results[website] = "4xx/client error."
+    elif code >= 300:
+      results[website] = "3xx/redirection."
+    elif code >= 200:
+      results[website] = "2xx/successful."
+    elif code >= 100:
+      results[website] = "1xx/informational response."
+
+print(results)
+-------------------------------------------
+import pygame as p, sys as s, random as r
+
+p.init()
+win = p.display.set_mode((480,480))
+clock = p.time.Clock()
+XMAX, YMAX = 16, 16
+
+class Snake:
+    def __init__(self,pos):
+        self.body = [pos]
+
+    def move(self, key):
+        global gameOver
+        xpos, ypos = self.body[0]
+        if key == p.K_LEFT:
+            xpos -= 1
+        elif key == p.K_RIGHT:
+            xpos += 1
+        elif key == p.K_UP:
+            ypos -= 1
+        elif key == p.K_DOWN:
+            ypos += 1
+
+        head = (xpos, ypos)
+
+        if head in self.body or head[0] < 0 or head[0] >= XMAX or head[1] < 0 or head[1] >= YMAX:
+            gameOver = True
+
+        self.body.insert(0, head)
+        if head == food:
+            makeFood(self)
+        else:
+            self.body.pop()
+
+    def draw(self):
+        for body in self.body:
+            p.draw.rect(win, (255,100,100), (body[0]*30, body[1]*30, 30, 30))
+        body = self.body[0]
+        p.draw.rect(win, (255,0,0), (body[0]*30, body[1]*30, 30, 30))
+        
+def makeFood(snake):
+    global food
+    while True:
+        pos = (r.randrange(0, XMAX), r.randrange(0, YMAX))
+        if pos != food and pos not in snake.body:
+            food = pos
+            break
+        
+def drawObject():
+    win.fill((128,128,128))
+    for idx in range(17):
+        p.draw.line(win, (64,64,64), (idx*30, 0), (idx*30, 480))
+        p.draw.line(win, (64,64,64), (0, idx*30), (480, idx*30))
+
+    snake.draw()
+    p.draw.ellipse(win, (0,255,0), (food[0]*30+1, food[1]*30+1, 28, 28))
+    
+def gameOverMessage():
+    message = myfont.render("Game Over!", True, (255,255,0))
+    x = (win.get_width() - message.get_width())/2
+    y = (win.get_height() - message.get_height())/2
+    win.fill((50,50,50))
+    win.blit(message, (x,y))
+
+myfont = p.font.SysFont(None, 80)
+key = p.K_DOWN
+message = None
+gameOver = False
+snake = Snake((XMAX//2, YMAX//2))
+food =(0,0)
+makeFood(snake)
+
+while True:
+    for event in p.event.get():
+        if event.type == p.QUIT:
+            p.quit()
+            s.exit()
+        elif event.type == p.KEYDOWN:
+            key = event.key
+            
+    if not gameOver:
+        snake.move(key)
+        drawObject()
+    else:
+        gameOverMessage()
+        
+    p.display.update()
+    clock.tick(5)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<p>Hello,</p>
+<p>welcome, and thanks for thinking about contributing.</p>
+
+<p>New to contributing to Open Source Free Libre software? There is a draft of <a href="http://renesd.blogspot.com/2019/11/draft-2-of-lets-write-unit-test.html">Let's write a unit test!"</a> which is a step by step guide on how to write your first unit test in python for pygame, which is very similar to how you would do it for other projects.</p>
+
+<hr>
+
+<p>Want or need to <a href=https://www.pygame.org/wiki/Compilation>compile pygame</a> from source? <a href=https://www.pygame.org/wiki/Compilation>Head here</a> for platform specific instructions
+<p>Developer guide: or "How to hack on pygame": [[Hacking]]</p>
+<p>Issues labeled "<a href="https://github.com/pygame/pygame/labels/good%20first%20issue">good first issue</a>" or "<a href="https://github.com/pygame/pygame/issues?q=is%3Aopen+is%3Aissue+label%3A%22Difficulty%3A+Easy%22">Difficulty: Easy</a>" are ones that should be easy for people to start with.</p>
+
+<p>Other ways to talk to us: [[info]]</p>
+<p>How to submit changes: [[patchesandbugs]]</p>
+<p>Our github project page, where you can take a look at what we're doing on: <a href="https://github.com/pygame/">https://github.com/pygame/</a></p>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ctrl + Shift + B	 코드 실행 (without debugging)
+ Ctrl + /	 해당 영역 주석처리
+ Ctrl + B	 익스플로러 접기/펼치기
+ Alt + Shift + ↑or ↓	 해당 영역 아래로 또는 위로 복제
+(Ctrl + K) + (Ctrl + T)	 VSC 테마설정(다크, 라이트 등)
+Ctrl + Shift + P, F1	 커맨드 팔레트 보이기
+Ctrl + ,	 유저 세팅 화면
+Ctrl + ] , [	 들여쓰기
+Ctrl + ↑or ↓	 스크롤 올리기 / 내리기
+Ctrl + D	 현재 커서가 위치해 있는 단어와 일치하는 선택하기
+Alt + 클릭	 커서 삽입하기
+Shift + Alt + → , ←	 선택 영역 확장하기
+Shift + Alt + F	도큐먼트 포맷화하기
+Ctrl + `	터미널 보이기 / 숨기기
+F11	풀 스크린 모드(전체화면)
+Ctrl + F4	현재 코드창 닫기
+Ctrl + \	코드 창 나누기(split)
+
+-----------------------------------------------------------
+from requests import get
+
+base_url = "https://weworkremotely.com/remote-jobs/search?utf8=%E2%9C%93&term="
+search_term = "python"
+
+response = get(f"{base_url}{search_term}")
+if response.status_code !==200:
+  print("Can't request website.")
+else
+  print(response.text)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

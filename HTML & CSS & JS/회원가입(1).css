@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+width:1200px;    /*  너비 */
+height:100px;   /* 높이 */
+margin: 0 auto;
+background-color: #045;
+}
+
+#logo {
+float: left;
+width: 250px;
+height: 100px;
+line-height:100px;
+padding-left: 20px;
+}
+
+#logo h1 {
+font-family:'Merienda', cursive;
+font-weight:700;
+font-size:30px;
+color: #fff;
+}
+
+nav {
+float: right;
+width: 900px;
+height: 100px;
+padding-top: 15px;
+}
+
+#topmenu {
+height: 60px;
+}
+
+#topmenu > li {
+float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
+position: relative;  
+}
+
+#topmenu > li > a {
+display:inline-block;  /* 링크 텍스트는 블록으로 */ 
+font: size 20px;
+color:#fff;  /* 글자 색 */
+font-weight:600;  /* 글자 굵기 */
+padding:15px 32px;  /* 패딩 */
+}
+
+#topmenu > li > a:hover {
+color:#1fa8f8;
+text-shadow:0 -2px #222;
+}
+
+/* 탑메뉴 부분 */
+
+body{
+    background-color: bisque;
+}
+
+#contents{
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+fieldset{
+    margin-bottom: 20px;
+    border: solid 1px gray;
+    border-radius: 8px;
+}
+
+fieldset legend{
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    padding: 30px;
+}
+
+ul li{
+    line-height: 2;
+}
+
+#contents .gaein:first-of-type label{
+    float: left;
+    width: 60px;
+    font-size: 13px;
+}
+
+#contents input:not([type=radio]){
+    border: 1px solid gray;
+    width: 200px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    padding: 5px 4px;
+}
+
+#contents button{
+    display: block;
+    margin: 0px auto;
+    padding: 5px 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}

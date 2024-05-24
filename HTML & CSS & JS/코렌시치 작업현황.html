@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="코렌시치 작업현황.css">
+    <title>코렌시치</title>
+</head>
+<body>
+    <header>
+        <div><h1>KORENCE</h1></div>
+    </header>
+    <main>
+        <div id="container">
+            <div class="content" id="box1">
+                <div id="test_check1">
+                    <div id="plane_test"><p>평면도 검사</p></div>
+                    <div id="reply1">
+                        <div id="reply1_front"></div>
+                        <div id="reply1_behind">OK</div>
+                    </div>
+                    <div id="minmax">-2.0~2.0</div>
+                    <span id="gap">GAP</span>
+                    <span id="max_gap">0.300 이하</span>
+                </div>
+                <div id="standard">
+                    <span id="number1">-0.005</span>
+                    <span id="number2">0.033</span>
+                    <span id="number3">0.006</span>
+                    <span id="number4">-0.027</span>
+                </div>
+                <div id="value">
+                    <div class="p_number">P1</div>
+                    <div id="variable1">0.1</div>
+                    <div class="p_number">P2</div>
+                    <div id="variable2">0.2</div>
+                    <div class="p_number">P3</div>
+                    <div id="variable3">0.3</div>
+                    <div class="p_number">P4</div>
+                    <div id="variable4">0.4</div>
+                    <div class="p_number">P5</div>
+                    <div id="variable5">0.5</div>
+                    <div class="p_number">P6</div>
+                    <div id="variable6">0.6</div>
+                </div>
+                <div id="result">
+                    <div id="weight">무게 검사 결과</div>
+                    <div id="reply2">
+                        <div id="reply2_front"></div>
+                        <div id="reply2_behind">OK</div>
+                    </div>
+                    <div id="reply3">
+                        <div id="reply3_front"></div>
+                        <div id="reply3_behind">250.1g</div>
+                    </div>
+                    <div id="limit">247g~253g</div>
+                </div>
+            </div>
+            <div class="content" id="box2">
+                <div id="test_check2">
+                    <span id="final_result">최종검사</span>
+                    <span id="datetime">datetime</span>
+                    <div id="tong_ki">통기검사 제외품</div>
+                    <br>
+                    <div id="reply4">
+                        <div id="reply4_front"></div>
+                        <div id="reply4_behind">OK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div id="supply">
+                <div class="aside_block1">PLAYER</div>
+                <div class="block1" id="player_name">Jeon Byeong Chan</div>
+                <div class="aside_block1">DATE</div>
+                <div class="block1" id="daytime">daytime</div>
+                <div class="aside_block1">PART NO.</div>
+                <div class="block1" id="part_num">26410-3N300</div>
+                <div id="scanner">SCANNER</div>
+            </div>
+            <div id="connection">
+                <div id="connecting">CONNECTING</div>
+                <div id="progress_bar">
+                    <progress id="progress" value="92" min="0" max="100"></progress>
+                </div>
+                <meter min="0" max="100" low="20" high="70" optimum="15" value="22"></meter>
+                <div class="aside_block2">TOTAL</div>
+                <div class="block2" id="total_amount">39</div>
+                <div class="aside_block2">OK COUNT</div>
+                <div class="block2" id="ok_count">0</div>
+                <div class="aside_block2">NG COUNT</div>
+                <div class="block2" id="ng_count">39</div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="footer_python">print(2023-09-14-오전 4:51:26 ---> 무게 적합)</div>
+        <fieldset class="gaein">
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="username"></label>
+                    <input id="username" name="username" type="text" required autofocus>
+                </li>
+        </fieldset>
+        <button id="button1" type="submit">제출</button>
+        <button id="button2" type="submit">리셋</button>
+        <button id="button3" type="submit">중지</button>
+    </footer>
+</body>
+</html>

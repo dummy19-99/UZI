@@ -1,0 +1,48 @@
+paiza python codeの練習
+
+import random
+number(関数) = random.randint(1, 100) -> 1から100の中でランダム
+number(関数) = random.random() -> 小数点までランダム
+
++ 足し算（たしざん）
+-  引き算（ひきざん）
+* 掛け算（かけざん）
+/ 割り算（わりざん）
+% あまり
+
+str() -> 数値を文字列に変換する
+
+if 조건식:
+elif 조건식:
+else:
+
+for カウンター in range(数字) 数字まで繰り返す
+	print()
+
+while 조건식: -> 조건식이 성립할 때까지 반복
+
+split('sep'=구분자, 'maxsplit'=반복횟수)
+
+max() -> 최대값
+min() -> 최소값
+
+list[] -> 집합. 여러 원소를 넣을 수 있다 ex) team["yuusha", "mahoutsukai", "sennsi"]
+
+len() -> list에 몇 개의 요소가 들어있는지 표시 ex) len(team) -> 3
+
+
+.append() -> 리스트에 요소 추가
+
+.pop -> 리스트의 함수 안의 원소를 지운다 ex) team.pop[2] -> sennsi가 없어짐.
+
+
+
+
+
+
+
+
+
+
+
+

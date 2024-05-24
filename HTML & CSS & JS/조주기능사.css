@@ -1,0 +1,36 @@
+*/* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid indigo;
+    text-align: center;
+}
+
+.칵테일표 {
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#칵테일이미지 {
+    margin: 50px;
+    border: 1px solid gray;
+    border-radius: 40%;
+    text-align: center;
+}
+
+#칵테일명 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#레시피 {
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+/*
